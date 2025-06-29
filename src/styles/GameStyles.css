@@ -1,0 +1,177 @@
+/* Game Container Styles */
+.game-container {
+  width: 700px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-family: sans-serif;
+  min-height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Game Status Styles */
+.game-status {
+  margin: 0;
+  font-weight: 700;
+}
+
+.game-status.cleared {
+  color: green;
+}
+
+.game-status.over {
+  color: red;
+}
+
+.game-status.ready {
+  color: #111;
+}
+
+.game-info {
+  width: 500px;
+  margin: 10px 0 0 2px;
+  text-align: left;
+  align-self: flex-start;
+  font-size: 16px;
+  color: #222;
+  font-weight: 500;
+}
+
+.game-info .remaining {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Game Controls Styles */
+.game-controls {
+  margin: 15px 0 0 0;
+}
+
+.control-row {
+  margin-bottom: 8px;
+}
+
+.control-label {
+  display: inline-block;
+  width: 60px;
+}
+
+.control-input {
+  width: 80px;
+  margin-left: 5px;
+  font-size: 16px;
+  padding: 4px 8px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  outline: none;
+}
+
+.control-input:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+}
+
+.control-hint {
+  margin-left: 5px;
+  color: #666;
+  font-size: 12px;
+}
+
+.control-buttons {
+  margin-bottom: 10px;
+}
+
+.game-button {
+  font-size: 15px;
+  padding: 6px 16px;
+  border: 1px solid #888;
+  border-radius: 4px;
+  background: #f5f5f5;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: background 0.2s;
+}
+
+.game-button:hover {
+  background: #e0e0e0;
+}
+
+.game-button.auto-play {
+  background: #4CAF50;
+  color: white;
+}
+
+.game-button.auto-play:hover {
+  background: #45a049;
+}
+
+/* Game Board Styles */
+.game-board {
+  width: 500px;
+  height:500px;
+  border: 2px solid #222;
+  margin: 20px 0 0 0;
+  position: relative;
+  background: #fff;
+  align-self: center;
+  transform: translate3d(0,0,0);
+  overflow: hidden;
+}
+
+/* Game Circle Styles */
+.game-circle {
+  position: absolute;
+  border-radius: 50%;
+  color: #222;
+  display: flex;    
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border: 2px solid #ff5722;
+  user-select: none;
+  transition: background 0.2s, opacity 0.2s;
+  box-sizing: border-box;
+  transform: translate3d(0,0,0);
+  cursor: pointer;
+}
+
+.game-circle:hover {
+  background: rgba(255, 193, 7, 0.3) !important;
+}
+
+.game-circle.fading {
+  cursor: default;
+}
+
+.game-circle-content {
+  text-align: center;
+  width: 100%;
+}
+
+.game-circle-timer {
+  font-size: 10px;
+  color: #b85c3b;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .game-container {
+    width: 90%;
+    padding: 20px;
+    margin: 20px auto;
+  }
+  
+  .game-board {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .game-info {
+    width: 300px;
+  }
+} 
