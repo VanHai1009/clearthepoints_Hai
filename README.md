@@ -1,10 +1,10 @@
-# Circle Sequence Game
+# Clear the points 
 
 A React-based puzzle game where players must click circles in numerical order from 1 to N.
 
 ## 🎮 Game Overview
 
-Circle Sequence Game is an engaging puzzle game that challenges players to click circles in the correct numerical sequence. The game features random circle positioning, smooth animations, and multiple difficulty levels.
+Clear the points  is an engaging puzzle game that challenges players to click circles in the correct numerical sequence. The game features random circle positioning, smooth animations, and multiple difficulty levels.
 
 ### How to Play
 1. Set the number of points (circles) you want to play with (1-20,000)
