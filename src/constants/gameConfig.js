@@ -7,7 +7,7 @@ export const GAME_CONFIG = {
   AUTO_PLAY_INTERVAL: 500,
   TIMER_INTERVAL: 100,
   TOP_ROWS: 3,
-  DEFAULT_POINTS: 5, // Tăng default để demo random layout
+  DEFAULT_POINTS: 5, 
   MIN_POINTS: 1,
   MAX_POINTS: 20000,
 };

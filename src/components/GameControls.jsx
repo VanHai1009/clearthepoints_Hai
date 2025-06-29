@@ -22,13 +22,11 @@ const GameControls = ({
           min={GAME_CONFIG.MIN_POINTS}
           max={GAME_CONFIG.MAX_POINTS}
           disabled={gameStatus === "playing"}
-        //   onChange={onPointsChange}
           onBlur={onPointsBlur}
           style={{
             width: 80,
             marginLeft: 5,
             fontSize: 16,
-            // padding: "4px 8px",
             border: "1px solid #aaa",
             borderRadius: 4,
             outline: "none",
@@ -53,7 +51,6 @@ const GameControls = ({
             alignItems:"center",
             justifyContent: "center",
             fontSize: 15,
-            // padding: "6px 16px",
             border: "1px solid #888",
             borderRadius: 4,
             background: "#f5f5f5",
@@ -72,7 +69,6 @@ const GameControls = ({
             onClick={onToggleAutoPlay}
             style={{
               fontSize: 15,
-            //   padding: "6px 16px",
               border: "1px solid #888",
               borderRadius: 4,
               background: "#f5f5f5" ,

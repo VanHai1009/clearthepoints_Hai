@@ -4,7 +4,7 @@ import { GAME_CONFIG } from '../constants/gameConfig';
 export const generateRandomPositions = (totalPoints) => {
   const { SQUARE_SIZE, CIRCLE_SIZE, MIN_DISTANCE } = GAME_CONFIG;
   const positions = [];
-  const maxAttempts = 50000; // Increase for better distribution
+  const maxAttempts = 50000; 
   
   // Calculate minimum spacing based on density
   const area = (SQUARE_SIZE - CIRCLE_SIZE) * (SQUARE_SIZE - CIRCLE_SIZE);
@@ -87,7 +87,7 @@ export const getFallbackGridPosition = (index, totalPoints, existingPositions) =
 export const generateCircles = (totalPoints) => {
   if (totalPoints <= 0) return [];
   
-  // Use random positioning instead of grid
+
   const positions = generateRandomPositions(totalPoints);
   
   // Create circles with numbers 1 to totalPoints

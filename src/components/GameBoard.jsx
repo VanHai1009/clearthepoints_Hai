@@ -33,13 +33,11 @@ const GameBoard = ({
         width: GAME_CONFIG.SQUARE_SIZE,
         height: GAME_CONFIG.SQUARE_SIZE,
         border: "2px solid #222",
-        // margin: "20px 0 0 0",
         position: "relative",
         background: "#fff",
         alignSelf: "center",
-        // Performance optimization
         transform: "translate3d(0,0,0)",
-        overflow: "hidden", // Ensure circles don't overflow
+        overflow: "hidden",
       }}>
         {renderedCircles}
       </div>
